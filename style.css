@@ -340,6 +340,6 @@ li.active {
 
 @media (max-width: 767px) {
   body {
-    margin: 0;
+    margin: 1em 0;
   }
 }
