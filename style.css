@@ -1,0 +1,343 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+* + * {
+    margin-top: 1.5em
+}
+
+body {
+    margin: 3vmax 10vmax;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
+    height: 90vh;
+    overflow-y: hidden;
+}
+
+.row {
+    clear: left;
+    display: flex;
+    align-items: stretch;
+}
+
+.column-3 {
+    width: 25%;
+}
+
+.column-9 {
+    width: calc(75% - 2em);
+}
+
+.sidebar {
+    float: left;
+}
+
+.content {
+    float: left;
+}
+
+.sidebar {
+    text-align: center;
+}
+
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: "";
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+h1 {
+    font-size: 1em;
+    background-color: #ddd;
+    padding: .5em;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 1em;
+}
+
+.sidebar {
+    padding: .5em;
+    background-color: #fff;
+    border-radius: .5em;
+    margin-right: 2em;
+}
+
+.sidebar img {
+    width: 7em;
+    border-radius: 5em;
+    margin-top: 1em;
+}
+
+.sidebar > h4 > i {
+    margin-right: .5em;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    left: -15px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li.active {
+    font-weight: 700;
+}
+
+.links img {
+    width: 1.5em;
+    border-radius: 0;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: .5em;
+    margin-top: 0;
+    padding: 1.5em;
+    
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+
+.description {
+    background-color: rgba(238, 238, 238, .6);
+    padding: 1em;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-container > .item {
+    flex: 0 1 calc(50% - 4em);
+    margin: 2em;
+    background-color: #fff;
+    padding: 1.5em;
+    display: flex;
+    align-content: flex-start;
+}
+
+
+.flex-container > .item > i {
+    color: #0096c7;
+    font-size: 2em;
+    align-self: flex-start;
+}
+
+.flex-container > .item > div {
+    margin: 0;
+    margin-left: 1em;
+}
+
+.flex-container > .item > div > h3, .flex-container > .item > div > p {
+    margin: 0;
+}
+
+.big-h3 {
+    font-size: 1.5rem;
+}
+
+.introduction {
+    margin-top: 0;
+}
+
+.total {
+    height: 1em;
+    background-color: #ddd;
+}
+
+.cv .actual {
+    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
+}
+.total-diploma .animate {
+    animation: diploma .5s linear;
+}
+
+.total-english .animate {
+    animation: pet .55s linear;
+}
+
+.diploma {
+    width: 74%;
+    height: 1em;
+}
+
+.english {
+    width: 90%;
+    height: 1em;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+.skills > .item {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills > .item > i {
+    font-size: 4rem;
+}
+
+.html {
+    color: #f06529;
+}
+
+.act-html {
+    background-color: #f06529;
+}
+
+.css {
+    color: #2965f1;
+}
+
+.act-css {
+    background-color: #2965f1;
+}
+
+.js {
+    color: #f0db4f;
+}
+
+.act-js {
+    background-color: #f0db4f;
+}
+
+.php {
+    color: #8993be;
+}
+
+.act-php {
+    background-color: #8993be;
+}
+
+.skills > .item > .total {
+    height: 60vh;
+    width: 50px;
+}
+
+.total {
+    display: flex;
+}
+.actual {
+    display: flex;
+    justify-content: center;
+}
+
+.total-html > .actual {
+    height: 90%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.total-html > .animate {
+    animation: html .5s linear;
+}
+
+.total-css > .actual {
+    height: 80%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.total-css > .animate {
+    animation: css .5s linear;
+}
+
+.total-js > .actual {
+    height: 75%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.total-js > .animate {
+    animation: js .5s linear;
+}
+
+.total-php > .actual {
+    height: 50%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.total-php > .animate {
+    animation: php .5s linear;
+}
+.actual > span {
+    align-self: center;
+    color: white;
+}
+@keyframes diploma {
+    0% {
+        width: 0;
+        height: 1em;
+    }
+    100% {
+       width: 74%; 
+       height: 1em;
+    }
+}
+
+@keyframes pet {
+    0% {
+        width: 0;
+        height: 1em;
+    }
+    100% {
+       width: 90%; 
+       height: 1em;
+    }
+}
+
+@keyframes html {
+    0% {
+        height: 0;
+    }
+    100% {
+       height: 90%
+    }
+}
+
+@keyframes css {
+    0% {
+        height: 0;
+    }
+    100% {
+       height: 80%
+    }
+}
+
+@keyframes js {
+    0% {
+        height: 0;
+    }
+    100% {
+       height: 75%
+    }
+}
+
+@keyframes php {
+    0% {
+        height: 0;
+    }
+    100% {
+       height: 50%
+    }
+}
