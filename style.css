@@ -377,4 +377,7 @@ li.active {
     .sidebar-button, .sidebar-close {
         display: block;
     }
+    .flex-container > .item {
+      margin: 2em .5em;
+    }
 }
