@@ -58,16 +58,16 @@ $(document).ready(function () {
            'display': 'block',
            'z-index': '1',
            'width': '80vw'});
-       $('.content').css('display', 'none');
+       $('.content').hide();
     });
     if($(window).width() < 767) {
         $menu.on('click', function() {
             $('.sidebar').css('display', 'none');
-            $('.content').css('display', 'block');
+            $('.content').show();
         });
         $('.sidebar-close').on('click', function(){
             $('.sidebar').css('display', 'none');
-            $('.content').css('display', 'block');
+            $('.content').show();
         });
         $items.removeAttr("data-aos-delay");
     }
