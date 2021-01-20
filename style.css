@@ -378,16 +378,30 @@ li.active {
         width: 100%;
         padding: 0;
     }
-    .content > home > h3, .content > home > p {
-      padding: 1.5em;
+    .content  .home > p, .content > .home .item {
+      margin: 2em 0;
+    }
+
+    .content > .home .item {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .description {
+      padding: 1em .2em;
     }
     .sidebar-button, .sidebar-close {
         display: block;
     }
-    .flex-container > .item {
-      margin: 2em .5em;
+    .skills > .item {
+      width: 10vw;
     }
-    .flex-container > .item {
-      padding: 0;
+    .skills  > .item > .php {
+        font-size: 2.5rem;
+        margin: .75rem 0;
+    }
+    .content .home > .title {
+      margin: 0;
+      padding: 1em;
     }
 }
