@@ -15,7 +15,6 @@ $(document).ready(function () {
     function showContent() {
         for (var i = 0; i < $content.length; i++) {
             if ($content.eq(i).hasClass('active')) {
-              AOS.refresh();
                 $content.eq(i).fadeIn(250);
                 if (i == 1) {
                     $scores.addClass('animate');
