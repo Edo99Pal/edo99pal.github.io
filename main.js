@@ -21,8 +21,8 @@ $(document).ready(function () {
                 }
             }
             if (i == 2) {
+              AOS.refresh();
                 for (var i = 0; i < $scores2.length; i++) {
-                  AOS.refresh();
                     $scores2.eq(i).delay(500 * i).queue(function(next){
                         $(this).addClass('animate');
                         next();
