@@ -370,9 +370,13 @@ li.active {
     .sidebar {
         display: none;
     }
-    .content {
+    .content > home {
         width: 100%;
         padding: 0;
+    }
+
+    .content > home > h3, .content > home > p {
+      padding: 10px;
     }
     .sidebar-button, .sidebar-close {
         display: block;
