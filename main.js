@@ -1,6 +1,6 @@
 $(document).ready(function () {
     AOS.init();
-    
+
     var $menu = $('.sidebar > ul').children();
     var $content = $('.content > div');
     var $items = $('.home .item');
@@ -58,7 +58,7 @@ $(document).ready(function () {
            'display': 'block',
            'z-index': '1',
            'width': '80vw'});
-       $('.content').css('display', 'none'); 
+       $('.content').css('display', 'none');
     });
     if($(window).width() < 767) {
         $menu.on('click', function() {
@@ -69,5 +69,6 @@ $(document).ready(function () {
             $('.sidebar').css('display', 'none');
             $('.content').css('display', 'block');
         });
+        $items.removeAttr("data-aos-delay");
     }
 });
