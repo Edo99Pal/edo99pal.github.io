@@ -39,10 +39,12 @@ body {
 
 .sidebar {
     float: left;
+    overflow: auto;
 }
 
 .content {
     float: left;
+    overflow: auto;
 }
 
 .sidebar {
