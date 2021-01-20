@@ -376,7 +376,7 @@ li.active {
     }
 
     .content > home > h3, .content > home > p {
-      padding: 10px;
+      padding: 1.5em;
     }
     .sidebar-button, .sidebar-close {
         display: block;
