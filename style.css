@@ -12,15 +12,16 @@
 }
 
 body {
-    margin: 3vmax 10vmax;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-    overflow-y: hidden;
+    margin: 0;
 }
 
+.container {
+    padding: 3vmax 10vmax;
+    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
+    height: 100vh;
+    position: fixed;
+}
 .row {
     clear: left;
     display: flex;
@@ -35,8 +36,12 @@ body {
     width: calc(75% - 2em);
 }
 
-.container {
-  display: flex;
+.sidebar {
+    float: left;
+}
+
+.content {
+    float: left;
 }
 
 .sidebar {
@@ -102,7 +107,7 @@ li.active {
     border-radius: .5em;
     margin-top: 0;
     padding: 1.5em;
-
+    
 }
 
 .title {
@@ -282,13 +287,28 @@ li.active {
     align-self: center;
     color: white;
 }
+
+.sidebar-button {
+    display: none;
+}
+
+.sidebar-button > i {
+    font-size: 3rem;
+}
+
+.sidebar-close {
+    text-align: left;
+    font-size: 3rem;
+    display: none;
+}
+
 @keyframes diploma {
     0% {
         width: 0;
         height: 1em;
     }
     100% {
-       width: 74%;
+       width: 74%; 
        height: 1em;
     }
 }
@@ -299,7 +319,7 @@ li.active {
         height: 1em;
     }
     100% {
-       width: 90%;
+       width: 90%; 
        height: 1em;
     }
 }
@@ -341,7 +361,17 @@ li.active {
 }
 
 @media (max-width: 767px) {
-  body {
-    margin: 1em 0;
-  }
+    .container {
+        padding: 1em 2em;
+        width: 100vw;
+    }
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    .sidebar-button, .sidebar-close {
+        display: block;
+    }
 }

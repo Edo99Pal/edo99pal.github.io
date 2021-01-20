@@ -1,10 +1,12 @@
 $(document).ready(function () {
     AOS.init();
+    
     var $menu = $('.sidebar > ul').children();
     var $content = $('.content > div');
     var $items = $('.home .item');
     var $scores = $('.cv .actual');
     var $scores2 = $('.skills .actual');
+    var $hambuger = $('.sidebar-button');
     $menu.eq(0).addClass('active');
     $content.hide();
     $content.eq(0).addClass('active');
@@ -51,4 +53,21 @@ $(document).ready(function () {
             }
         }
     });
+    $hambuger.on('click', function(){
+       $('.sidebar').css({
+           'display': 'block',
+           'z-index': '1',
+           'width': '80vw'});
+       $('.content').css('display', 'none'); 
+    });
+    if($(window).width() < 767) {
+        $menu.on('click', function() {
+            $('.sidebar').css('display', 'none');
+            $('.content').css('display', 'block');
+        });
+        $('.sidebar-close').on('click', function(){
+            $('.sidebar').css('display', 'none');
+            $('.content').css('display', 'block');
+        });
+    }
 });
