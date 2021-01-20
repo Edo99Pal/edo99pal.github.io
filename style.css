@@ -370,11 +370,13 @@ li.active {
     .sidebar {
         display: none;
     }
+    .content {
+      width: 100%;
+    }
     .content > home {
         width: 100%;
         padding: 0;
     }
-
     .content > home > h3, .content > home > p {
       padding: 1.5em;
     }
