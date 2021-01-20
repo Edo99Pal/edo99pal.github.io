@@ -372,6 +372,7 @@ li.active {
     }
     .content {
         width: 100%;
+        padding: 0;
     }
     .sidebar-button, .sidebar-close {
         display: block;
