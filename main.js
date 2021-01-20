@@ -15,13 +15,13 @@ $(document).ready(function () {
     function showContent() {
         for (var i = 0; i < $content.length; i++) {
             if ($content.eq(i).hasClass('active')) {
+              AOS.refresh();
                 $content.eq(i).fadeIn(250);
                 if (i == 1) {
                     $scores.addClass('animate');
                 }
             }
             if (i == 2) {
-                AOS.refresh();
                 for (var i = 0; i < $scores2.length; i++) {
                     $scores2.eq(i).delay(500 * i).queue(function(next){
                         $(this).addClass('animate');
