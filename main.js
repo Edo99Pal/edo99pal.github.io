@@ -15,7 +15,7 @@ $(document).ready(function () {
     function showContent() {
         for (var i = 0; i < $content.length; i++) {
             if ($content.eq(i).hasClass('active')) {
-                $content.eq(i).fadeIn(500);
+                $content.eq(i).fadeIn(500 );
                 if (i == 1) {
                     $scores.addClass('animate');
                 }

@@ -290,9 +290,6 @@ li.active {
 
 .sidebar-button {
     display: none;
-}
-
-.sidebar-button > i {
     font-size: 3rem;
 }
 
