@@ -358,6 +358,9 @@ li.active {
 }
 
 @media (max-width: 767px) {
+    body {
+      overflow: auto;
+    }
     .container {
         padding: 1em 2em;
         width: 100vw;
@@ -386,7 +389,7 @@ li.active {
       padding: 1em .2em;
     }
     .sidebar-button, .sidebar-close {
-        display: block;
+        display:  block;
     }
     .skills > .item {
       width: 10vw;
