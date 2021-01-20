@@ -22,13 +22,18 @@ $(document).ready(function () {
             }
             if (i == 2) {
               AOS.refresh();
+              if($(window).width() > 767) {
                 for (var i = 0; i < $scores2.length; i++) {
                     $scores2.eq(i).delay(500 * i).queue(function(next){
                         $(this).addClass('animate');
                         next();
                     });
                 }
-            }
+              }
+              else {
+                $scores2.addClass('animate');
+              }
+           }
         }
     }
 
@@ -58,16 +63,16 @@ $(document).ready(function () {
            'display': 'block',
            'z-index': '1',
            'width': '80vw'});
-       $('.content').hide();
+       $('.content').css('display', 'none');
     });
     if($(window).width() < 767) {
         $menu.on('click', function() {
             $('.sidebar').css('display', 'none');
-            $('.content').show();
+            $('.content').css('display', 'block');
         });
         $('.sidebar-close').on('click', function(){
             $('.sidebar').css('display', 'none');
-            $('.content').show();
+            $('.content').css('display', 'block');
         });
         $items.removeAttr("data-aos-delay");
     }

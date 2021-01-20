@@ -386,4 +386,7 @@ li.active {
     .flex-container > .item {
       margin: 2em .5em;
     }
+    .flex-container > .item {
+      padding: 0;
+    }
 }
