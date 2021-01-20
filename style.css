@@ -369,6 +369,7 @@ li.active {
     }
     .sidebar {
         display: none;
+        margin: 0;
     }
     .content {
       width: 100%;
