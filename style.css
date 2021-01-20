@@ -19,8 +19,8 @@ body {
 .container {
     padding: 3vmax 10vmax;
     background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
-    min-height: 100vh;
     position: fixed;
+    min-height: 100vh;
 }
 .row {
     clear: left;
