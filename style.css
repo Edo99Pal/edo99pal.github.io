@@ -314,17 +314,30 @@ li.active {
     display: block;
 }
 
+input {
+    margin-top: 5px;
+}
+
 label > span {
     display: block;
+    margin-top: 5px;
 }
 
 label > input, label > textarea {
     background-color: #eee;
     border: none;
     border-bottom: 1px solid #aaa;
+    margin-top: 5px;
 }
 input[type="submit"] {
     display: block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
 }
 @keyframes diploma {
     0% {
