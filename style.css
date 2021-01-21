@@ -429,4 +429,15 @@ input[type="submit"] {
       margin: 0;
       padding: 1em;
     }
+    .contacts > .form {
+        width: 100%;
+        margin: 0;
+    }
+    .contacts .form label {
+        position: relative;
+        left: 10px;
+    }
+    .contacts .form textarea {
+        width: 90%;
+    }
 }
