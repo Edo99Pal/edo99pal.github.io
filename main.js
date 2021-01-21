@@ -15,25 +15,27 @@ $(document).ready(function () {
     function showContent() {
         for (var i = 0; i < $content.length; i++) {
             if ($content.eq(i).hasClass('active')) {
-                $content.eq(i).fadeIn(500 );
+                $content.eq(i).fadeIn(500);
                 if (i == 1) {
                     $scores.addClass('animate');
                 }
-            }
-            if (i == 2) {
-              AOS.refresh();
-              if($(window).width() > 767) {
-                for (var i = 0; i < $scores2.length; i++) {
-                    $scores2.eq(i).delay(500 * i).queue(function(next){
-                        $(this).addClass('animate');
-                        next();
-                    });
+                if (i == 2) {
+                    AOS.refresh();
+                    if ($(window).width() > 767) {
+                        for (var i = 0; i < $scores2.length; i++) {
+                            $scores2.eq(i).delay(500 * i).queue(function (next) {
+                                $(this).addClass('animate');
+                                next();
+                            });
+                        }
+                    } else {
+                        $scores2.addClass('animate');
+                    }
                 }
-              }
-              else {
-                $scores2.addClass('animate');
-              }
-           }
+                if(i==3) {
+                    $('.form').fadeIn(1000);
+                }
+            }
         }
     }
 
@@ -58,19 +60,20 @@ $(document).ready(function () {
             }
         }
     });
-    $hambuger.on('click', function(){
-       $('.sidebar').css({
-           'display': 'block',
-           'z-index': '1',
-           'width': '80vw'});
-       $('.content').css('display', 'none');
+    $hambuger.on('click', function () {
+        $('.sidebar').css({
+            'display': 'block',
+            'z-index': '1',
+            'width': '80vw'
+        });
+        $('.content').css('display', 'none');
     });
-    if($(window).width() < 767) {
-        $menu.on('click', function() {
+    if ($(window).width() < 767) {
+        $menu.on('click', function () {
             $('.sidebar').css('display', 'none');
             $('.content').css('display', 'block');
         });
-        $('.sidebar-close').on('click', function(){
+        $('.sidebar-close').on('click', function () {
             $('.sidebar').css('display', 'none');
             $('.content').css('display', 'block');
         });

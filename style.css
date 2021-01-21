@@ -299,6 +299,33 @@ li.active {
     display: none;
 }
 
+.contacts > .form {
+    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: .5em;
+    padding: 1em;
+    color: white;
+    
+}
+.contacts > form > label {
+    display: block;
+}
+
+label > span {
+    display: block;
+}
+
+label > input, label > textarea {
+    background-color: #eee;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+input[type="submit"] {
+    display: block;
+}
 @keyframes diploma {
     0% {
         width: 0;
