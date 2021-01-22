@@ -367,8 +367,6 @@ input[type="submit"]:hover {
     background-color: #25cc87;
     border-radius: 1em;
     padding: .5em 1em;
-    position: relative;
-    left: 380px;
     outline: 0px solid red;
     cursor: pointer;
 }
@@ -380,6 +378,13 @@ input[type="submit"]:hover {
     border-radius: .5em;
 }
 
+.form > form > div > .buttons {
+    width: 30vw;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
 @keyframes diploma {
     0% {
         width: 0;
