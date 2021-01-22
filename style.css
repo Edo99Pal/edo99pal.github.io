@@ -305,6 +305,10 @@ li.active {
     padding: 1em;
     border-radius: .5em;
 }
+
+.contacts li {
+    cursor: default;
+}
 .contacts > .form {
     display: flex;
     justify-content: center;
