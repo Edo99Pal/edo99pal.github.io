@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    padding: 3vmax 10vmax;
+    padding: 3.8vmax 10vmax;
     background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
     min-height: 100vh;
 }
@@ -118,6 +118,7 @@ li.active {
 .description {
     background-color: rgba(238, 238, 238, .6);
     padding: 1em;
+    border-radius: .5em;
 }
 
 .flex-container {
