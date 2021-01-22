@@ -1,0 +1,3 @@
+Sitemap: https://edo99pal.github.io/sitemap.xml
+User-agent: *
+Disallow:
