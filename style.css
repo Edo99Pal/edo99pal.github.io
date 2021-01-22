@@ -369,6 +369,7 @@ input[type="submit"]:hover {
     padding: .5em 1em;
     outline: 0px solid red;
     cursor: pointer;
+    border: none;
 }
 
 .alert {
