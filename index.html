@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,7 +36,7 @@
                         <a href="https://www.linkedin.com/in/edoardo-palamito-571512167" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
                         <a href="https://twitter.com/EdoardoPalamito" target="_blank"><img src="twitter.png" alt="twitter"></a>
                         <a href="https://www.facebook.com/edoardo.palamito" target="_blank"><img src="facebook.svg" alt="facebook"></a>
-                        <a     href="https://www.instagram.com/edoardo_palamito" target="_blank"><img src="instagram.png" alt="instagram"></a>
+                        <a href="https://www.instagram.com/edoardo_palamito" target="_blank"><img src="instagram.png" alt="instagram"></a>
                     </div>
                 </div>
                 <div class="content column-9">
@@ -118,29 +119,61 @@
                     <div class="contacts">
                         <h3 class="title">Contacts</h3>
                         <p>Although I'd rather be contacted via linkedin, here's a form which you can use to contact me via email.</p>
+
+                        <ul>
+                            <li>Your name</li>
+                            <li>Your surname</li>
+                            <li>Your email</li>
+                            <li>Object of the email</li>
+                            <li>Message</li>
+                        </ul>
                         <div class="form">
                             <form action="https://formspree.io/f/maylvjdz" method="post">
-                               <label for="name">
-                                    <span>Name</span>
-                                    <input tyoe="text" name="name">
-                                </label>
-                                <label for="surname">
-                                    <span>Surname</span>
-                                    <input tyoe="text" name="surname">
-                                </label>
-                                <label for="email">
-                                    <span>Email</span>
-                                    <input tyoe="text" name="email">
-                                </label>
-                                <label for="object">
-                                    <span>Object</span>
-                                    <input tyoe="text" name="object">
-                                </label>
-                                <label for="message">
-                                    <span>Message</span>
+                                <div>
+                                   <h3>Your name</h3>
+                                    <label for="name">
+                                        <span>Name</span>
+                                    </label>
+                                    <input type="text" name="name" required>
+                                    <button type="button" class="step">Next step</button>
+                                    <span class="alert">You must insert a value.</span>
+                                </div>
+                                <div>
+                                   <h3>Your surname</h3>
+                                    <label for="surname">
+                                        <span>Surname</span>
+                                    </label>
+                                    <input type="text" name="surname" required>
+                                    <button type="button" class="step">Next step</button>
+                                    <span class="alert">You must insert a value.</span>
+                                </div>
+                                <div>
+                                   <h3>Your email</h3>
+                                    <label for="email">
+                                        <span>Email</span>
+                                    </label>
+                                    <input type="text" name="email" required>
+                                    <button type="button" class="step">Next step</button>
+                                    <span class="alert">You must insert a value.</span>
+                                </div>
+                                <div>
+                                   <h3>Object of the email</h3>
+                                    <label for="object">
+                                        <span>Object</span>
+                                    </label>
+                                    <input type="text" name="object" required>
+                                    <button type="button" class="step">Next step</button>
+                                    <span class="alert">You must insert a value.</span>
+                                </div>
+                                <div>
+                                   <h3>Message</h3>
+                                    <label for="message" required>
+                                        <span>Message</span>
+                                    </label>
                                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                                </label>
-                                <input type="submit" value="submit">
+                                    <input type="submit" value="submit">
+                                    <span class="alert">You must insert a value.</span>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -152,4 +185,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 
-</body></html>
+</body>
+
+</html>

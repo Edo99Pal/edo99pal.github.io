@@ -7,6 +7,11 @@ $(document).ready(function () {
     var $scores = $('.cv .actual');
     var $scores2 = $('.skills .actual');
     var $hambuger = $('.sidebar-button');
+    var $form = $('.form > form > div');
+    var $formEls = $('.contacts li');
+    var $nextStep = $('.step');
+    var $input = $('.form input:not([type=submit])');
+    var $submit = $('.form input[type=submit]');
     $menu.eq(0).addClass('active');
     $content.hide();
     $content.eq(0).addClass('active');
@@ -32,7 +37,7 @@ $(document).ready(function () {
                         $scores2.addClass('animate');
                     }
                 }
-                if(i==3) {
+                if (i == 3) {
                     $('.form').fadeIn(1000);
                 }
             }
@@ -79,4 +84,28 @@ $(document).ready(function () {
         });
         $items.removeAttr("data-aos-delay");
     }
+    $form.hide();
+    $form.eq(0).fadeIn(500);
+    $formEls.eq(0).addClass('active');
+    var index = 0;
+    $('.alert').hide();
+    $nextStep.on('click', function () {
+        if($input.eq(index).val()) {
+            $form.eq(index).fadeOut(500);
+            $formEls.eq(index).removeClass('active')
+            $formEls.eq(index + 1).addClass('active');
+            $form.eq(index + 1).delay(500).fadeIn(500);
+            index++;
+            $('.alert').hide();
+        }
+        else {
+            $('.alert').fadeIn(500);
+        }
+    });
+    $submit.on('click', function(e) {
+        if(!$('textarea').val()){
+        e.preventDefault();
+        $('.alert').fadeIn(500);    
+    }
+    });
 });

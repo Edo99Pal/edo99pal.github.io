@@ -299,16 +299,19 @@ li.active {
     display: none;
 }
 
+.contacts {
+    background-color: #010449;
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+}
 .contacts > .form {
-    background-image: linear-gradient(0.40turn, #00FFFF, #FF00FF);
     display: flex;
     justify-content: center;
     width: 40%;
     margin: 0 auto;
     border-radius: .5em;
     padding: 1em;
-    color: white;
-    
 }
 .contacts > form > label {
     display: block;
@@ -316,6 +319,15 @@ li.active {
 
 input {
     margin-top: 5px;
+    border-radius: .5em;
+    border: 2px solid #25cc87;
+    background-color: transparent;
+    color: white;
+    width: 30vw;
+}
+
+input:focus {
+    outline: 0px solid red;
 }
 
 label > span {
@@ -323,22 +335,51 @@ label > span {
     margin-top: 5px;
 }
 
-label > input, label > textarea {
-    background-color: #eee;
+label > input, textarea {
+    background-color: transparent;
     border: none;
-    border-bottom: 1px solid #aaa;
+    border: 1px solid #25cc87;
     margin-top: 5px;
+    color: white;
+    outline: 0px solid red;
 }
+
 input[type="submit"] {
     display: block;
     padding: 1em 2em;
     text-transform: uppercase;
 }
+
 input[type="submit"]:hover {
     cursor: pointer;
     color: white;
-    background-color: black;
+    background-color: #25cc87;
 }
+
+.contacts > .form div {
+    position: relative;
+    top: -200px;
+}
+
+.form button {
+    display: block;
+    color: white;
+    background-color: #25cc87;
+    border-radius: 1em;
+    padding: .5em 1em;
+    position: relative;
+    left: 380px;
+    outline: 0px solid red;
+    cursor: pointer;
+}
+
+.alert {
+    display: block;
+    padding: .5em 1em;
+    background-color: #ff5f56;
+    border-radius: .5em;
+}
+
 @keyframes diploma {
     0% {
         width: 0;
@@ -456,5 +497,16 @@ input[type="submit"]:hover {
     .contacts .form input[type="submit"] {
         position: relative;
         left: 10px;
+    }
+    .contacts li {
+        display: none;
+    }
+    .form {
+        position: relative;
+        top: 200px;
+    }
+    .form button {
+        position: relative;
+        left: 5px;
     }
 }
