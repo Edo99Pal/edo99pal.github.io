@@ -16,7 +16,17 @@ $(document).ready(function () {
     $content.hide();
     $content.eq(0).addClass('active');
     $content.eq(0).fadeIn(250);
-
+    
+    $menu.hover(function(){
+        $(this).animate({
+            'font-size': '1.2em'
+        }, 200);
+    });
+    $menu.on('mouseleave', function(){
+        $(this).animate({
+            'font-size': '1em'
+        }, 200);
+    });
     function showContent() {
         for (var i = 0; i < $content.length; i++) {
             if ($content.eq(i).hasClass('active')) {

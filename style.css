@@ -538,3 +538,16 @@ input[type="submit"]:hover {
         padding-left: 20px;
     }
 }
+
+@media (max-width: 900px) {
+    h1 {
+        padding-right: 5em;
+        padding-left: 1em;
+        position: relative;
+        left: -10px;
+    }
+    
+    .status {
+        padding-right: 4em;
+    }
+}
