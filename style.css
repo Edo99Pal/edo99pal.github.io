@@ -308,6 +308,7 @@ li.active {
     text-align: left;
     font-size: 3rem;
     display: none;
+    margin: .3em .5em;
 }
 
 .contacts {
