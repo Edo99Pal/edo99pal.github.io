@@ -19,12 +19,14 @@ $(document).ready(function () {
     
     $menu.hover(function(){
         $(this).animate({
-            'font-size': '1.2em'
+            'font-size': '1.2em',
+            'font-weight': 500
         }, 200);
     });
     $menu.on('mouseleave', function(){
         $(this).animate({
-            'font-size': '1em'
+            'font-size': '1em',
+            'font-weight': 400
         }, 200);
     });
     function showContent() {
