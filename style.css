@@ -549,3 +549,11 @@ input[type="submit"]:hover {
         padding: .5em
     }
 }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    h1 {
+        width: 60%;
+        position: relative;
+        left: -5px;
+    }
+}
