@@ -99,6 +99,8 @@ li {
 
 li:hover {
     cursor: pointer;
+    transform: scale(1.25);
+    transition: .25s;    
 }
 
 li.active {

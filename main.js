@@ -16,13 +16,6 @@ $(document).ready(function () {
     $content.hide();
     $content.eq(0).addClass('active');
     $content.eq(0).fadeIn(250);
-    
-    $menu.hover(function(){
-        $(this).animate({
-            'font-size': '1.2em',
-            'font-weight': 500
-        }, 200);
-    });
     $menu.on('mouseleave', function(){
         $(this).animate({
             'font-size': '1em',
